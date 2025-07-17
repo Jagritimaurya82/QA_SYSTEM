@@ -3,24 +3,24 @@ Here's a **complete `README.md` file** for your `QA_System` project based on wha
 ---
 
 ````markdown
-# QA_System 🧠📄  
+# QA_System   
 **Question Answering System using Gemini and LlamaIndex**
 
 This is a document-based QA system that lets you upload your PDF and ask natural language questions to extract information from it. It uses **Gemini (Google's LLM)** as the backend, along with **LlamaIndex** for indexing and querying the document. The frontend is built using **Streamlit**.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- ✅ Upload PDF documents
-- ✅ Ask natural language questions
-- ✅ Uses Gemini Pro (`gemini-1.5-flash-latest`) as the LLM
-- ✅ Indexes documents using LlamaIndex
-- ✅ Clean, minimal Streamlit interface
+-  Upload PDF documents
+-  Ask natural language questions
+-  Uses Gemini Pro (`gemini-1.5-flash-latest`) as the LLM
+-  Indexes documents using LlamaIndex
+-  Clean, minimal Streamlit interface
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 - **Python 3.8+**
 - **Streamlit**
@@ -30,7 +30,7 @@ This is a document-based QA system that lets you upload your PDF and ask natural
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### 1. Clone the repository
 
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔑 Setup API Keys
+##  Setup API Keys
 
 Create a `.env` file in the root directory and add your Gemini API key:
 
@@ -66,7 +66,7 @@ GOOGLE_API_KEY=your_gemini_api_key_here
 
 ---
 
-## ▶️ Run the App
+## ▶ Run the App
 
 ```bash
 streamlit run StreamlitApp.py
@@ -76,11 +76,11 @@ The app will open in your default browser.
 
 ---
 
-## 🗃️ Project Structure
+## 🗃 Project Structure
 
 ```
 QA_SYSTEM/
-├── app.py                      # Streamlit UI
+├── StreamlitApp.py                      # Streamlit UI
 ├── requirements.txt
 ├── .env                        # Gemini API Key (not committed)
 ├── logs/                       # App logs
@@ -95,7 +95,7 @@ QA_SYSTEM/
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ![screenshot1](screenshots/upload.png)
 
@@ -107,7 +107,7 @@ QA_SYSTEM/
 
 ---
 
-## ⚠️ Note
+##  Note
 
 * Only PDF file support is implemented.
 * Gemini LLMs require internet and valid API key.
