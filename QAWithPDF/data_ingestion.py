@@ -1,34 +1,41 @@
+# --------------------- Path Setup ---------------------
+
 import sys
 import os
+
+# Add the parent directory to the system path to allow relative imports
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+# --------------------- Imports ------------------------
 
+from llama_index.core import SimpleDirectoryReader  # For loading documents
+from exception import customexception               # Custom exception handling class
+from logger import logging                           # Custom logger for logging messages
 
-from llama_index.core import SimpleDirectoryReader
-import sys
-from exception import customexception
-from logger import logging
+# --------------------- Function: load_data ------------------------
 
 def load_data(data):
     """
-    Load PDF documents from a specified directory.
+    Load documents from a specified directory using SimpleDirectoryReader.
 
     Parameters:
-    - data (str): The path to the directory containing PDF files.
+    - data (str): The path to the directory containing documents (PDF, TXT, etc.).
 
     Returns:
-    - A list of loaded PDF documents. The specific type of documents may vary.
+    - documents (list): A list of loaded Document objects.
     """
     try:
-        logging.info("data loading started...")
+        logging.info("Data loading started...")
+
+        # Initialize the document loader for the 'Data' directory
         loader = SimpleDirectoryReader("Data")
-        documents=loader.load_data()
-        logging.info("data loading completed...")
+
+        # Load and return documents
+        documents = loader.load_data()
+
+        logging.info("Data loading completed.")
         return documents
+
     except Exception as e:
-        logging.info("exception in loading data...")
-        raise customexception(e,sys)
-
-
-
-    
+        logging.info("Exception occurred while loading data.")
+        raise customexception(e, sys)

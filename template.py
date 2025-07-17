@@ -8,7 +8,6 @@ list_of_files=[
     "QAWithPDF/data_ingestion.py",
     "QAWithPDF/embedding.py",
     "QAWithPDF/model_api.py",
-    "Experiments/experiment.ipynb",
     "StreamlitApp.py",
     "logger.py",
     "exception.py",
@@ -30,4 +29,3 @@ for filepath in list_of_files:
 
    else:
       logging.info(f"{filename} is already created")
-      
