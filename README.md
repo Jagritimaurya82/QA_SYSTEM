@@ -1,9 +1,4 @@
-Here's a **complete `README.md` file** for your `QA_System` project based on what you've shared (Gemini integration, document-based QA using Streamlit and LlamaIndex):
-
----
-
-````markdown
-#QA_System   
+# QA_System   
 **Question Answering System using Gemini and LlamaIndex**
 
 This is a document-based QA system that lets you upload your PDF and ask natural language questions to extract information from it. It uses **Gemini (Google's LLM)** as the backend, along with **LlamaIndex** for indexing and querying the document. The frontend is built using **Streamlit**.
@@ -30,7 +25,7 @@ This is a document-based QA system that lets you upload your PDF and ask natural
 
 ---
 
-##  Installation
+###  Installation
 
 ### 1. Clone the repository
 
