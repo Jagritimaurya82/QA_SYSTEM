@@ -3,7 +3,7 @@ Here's a **complete `README.md` file** for your `QA_System` project based on wha
 ---
 
 ````markdown
-# QA_System   
+#QA_System   
 **Question Answering System using Gemini and LlamaIndex**
 
 This is a document-based QA system that lets you upload your PDF and ask natural language questions to extract information from it. It uses **Gemini (Google's LLM)** as the backend, along with **LlamaIndex** for indexing and querying the document. The frontend is built using **Streamlit**.
@@ -66,7 +66,7 @@ GOOGLE_API_KEY=your_gemini_api_key_here
 
 ---
 
-## ▶ Run the App
+## Run the App
 
 ```bash
 streamlit run StreamlitApp.py
