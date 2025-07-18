@@ -104,7 +104,7 @@ QA_SYSTEM/
 
 ##  Note
 
-* Only PDF file support is implemented.
+ 
 * Gemini LLMs require internet and valid API key.
 * Model used: `gemini-1.5-flash-latest` (changeable in `model_api.py`)
 
